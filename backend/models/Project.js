@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 // Explicitly set the collection name to 'projects'
 const projectSchema = new mongoose.Schema({
@@ -12,5 +12,7 @@ const projectSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now }
 });
 
-// 🔥 Explicitly link to the 'projects' collection
-module.exports = mongoose.model("Project", projectSchema, "projects");
+
+// module.exports = mongoose.model("Project", projectSchema, "projects");
+const Project = mongoose.model("Project", projectSchema, "projects");
+export default Project;

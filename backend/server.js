@@ -1,22 +1,19 @@
-require('dotenv').config();
-const express = require('express');
-const cors = require('cors');
-const projectRoutes = require('./routes/projectRoutes');
-const connectDB = require('./config/db');
-const app = express();
-const path = require('path');
+import dotenv from 'dotenv';
+import express from 'express';
+import cors from 'cors';
+import projectRoutes from './routes/projectRoutes.js';
+import connectDB from './config/db.js';
 
-// // Middleware
+// Load environment variables
+dotenv.config({path:'./backend/.env'});
+// console.log("MONGO_URI:", process.env.MONGO_URI);
+
+
+const app = express();
+
+// Middleware
 app.use(cors());
 app.use(express.json());
-
-
-app.use(express.static(path.join(__dirname, '../frontend/build')));
-
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../frontend/build', 'index.html'));
-});
 
 // Routes
 app.use('/projects', projectRoutes);
@@ -27,4 +24,3 @@ connectDB();
 // Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
-
