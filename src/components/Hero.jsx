@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <div className='hero container ubuntu-regular mx-auto flex flex-col md:flex-row text-white gap-1 xl:px-16 items-center justify-center md:justify-start h-[95vh] xl:w-[75%] z-30 px-4 md:px-10 ' id='home'>
+    <div className='hero container ubuntu-regular mx-auto flex flex-col md:flex-row text-white gap-1 xl:px-16 items-center justify-center md:justify-start h-[80vh] md:h-[95vh] xl:w-[75%] z-30 px-4 md:px-10 ' id='home'>
 
       {/* Content Animation */}
       <motion.div
@@ -20,7 +20,7 @@ function Hero() {
         <p className='hi text-cyan-300 mb-3 text-sm md:text-md'>Hi, my name is</p>
         <h1 className="text-4xl md:text-6xl lg:text-7xl ubuntu-bold font-black mb-2 mb:3 text-gray-300">Phiwe Mhlope.</h1>
         <h1 className="text-4xl md:text-5xl lg:text-6xl ubuntu-medium mb-5 text-gray-400">I'm a Full-Stack Developer.</h1>
-        <p className="xl:pr-20 text-gray-400 text-sm md:text-base mb-5"> <span className='italic'>Turning ideas into reality through code.</span> <br />
+        <p className="xl:pr-20 text-gray-400 text-base md:text-base mb-5"> <span className='italic'>Turning ideas into reality through code.</span> <br />
         I build modern, scalable web applications with a focus on performance and user experience. Let’s create something amazing together!</p>
 
         <div className="social-icons flex gap-1 mt-5 items-center cursor-pointer">
