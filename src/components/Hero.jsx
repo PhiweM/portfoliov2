@@ -23,11 +23,11 @@ function Hero() {
         <p className="xl:pr-20 text-gray-400 text-base md:text-base mb-5"> <span className='italic'>Turning ideas into reality through code.</span> <br />
         I build modern, scalable web applications with a focus on performance and user experience. Let’s create something amazing together!</p>
 
-        <div className="social-icons flex gap-1 mt-5 items-center cursor-pointer">
-          <a href="#" target="_blank" className='social-media-icon text-gray-400 text-lg hover:text-cyan-300'><FaLinkedin /></a>
-          <a href="#" target="_blank" className='social-media-icon text-gray-400 text-lg hover:text-cyan-300'><FaGithub /></a>
-          <a href="#" target="_blank" className='social-media-icon text-gray-400 text-lg hover:text-cyan-300'> <FaInstagram /> </a>
-          <a href="#" target="_blank" className='social-media-icon text-gray-400 text-base hover:text-cyan-300'><BsTwitterX /></a>
+        <div className="social-icons flex gap-2 mt-5 items-center cursor-pointer">
+          <a href="https://www.linkedin.com/in/phiwe-mhlope/" target="_blank" className='social-media-icon text-gray-400 text-lg hover:text-cyan-300'><FaLinkedin /></a>
+          <a href="https://github.com/PhiweM" target="_blank" className='social-media-icon text-gray-400 text-lg hover:text-cyan-300'><FaGithub /></a>
+          <a href="https://github.com/PhiweM" target="_blank" className='social-media-icon text-gray-400 text-lg hover:text-cyan-300'> <FaInstagram /> </a>
+          <a href="https://github.com/PhiweM" target="_blank" className='social-media-icon text-gray-400 text-base hover:text-cyan-300'><BsTwitterX /></a>
           <a href="https://www.mhlopephiwe.com/" target="_blank" className='text-gray-400 text-base p-0.5 mt-1 rounded hover:text-cyan-300 flex items-center pb-1.5'>Blog</a>
         </div>
       </motion.div>
