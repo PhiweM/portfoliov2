@@ -3,6 +3,13 @@ import express from 'express';
 import cors from 'cors';
 import projectRoutes from './routes/projectRoutes.js';
 import connectDB from './config/db.js';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+
+// Get __dirname equivalent in ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Load environment variables
 dotenv.config({path:'./backend/.env'});
@@ -17,6 +24,13 @@ app.use(express.json());
 
 // Routes
 app.use('/projects', projectRoutes);
+
+app.use(express.static(path.join(__dirname, '../dist')));
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../dist/index.html'));
+  });
+  
 
 // MongoDB Connection
 connectDB();
