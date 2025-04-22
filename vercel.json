@@ -9,11 +9,11 @@
     "routes": [
       {
         "src": "/projects",
-        "dest": "backend/index.js"
+        "dest": "backend/server.js"
       },
       {
         "src": "/(.*)",
-        "dest": "backend/index.js"
+        "dest": "backend/server.js"
       }
     ]
   }
