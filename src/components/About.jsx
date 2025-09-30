@@ -1,5 +1,6 @@
 import React from 'react';
-import heroImg from './../assets/heroimg.png';
+// import heroImg from './../assets/heroimg.png';
+import heroImg from './../assets/heroimg2.png';
 import { motion } from 'framer-motion';
 
 export default function About() {

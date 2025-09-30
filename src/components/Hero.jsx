@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImg from './../assets/heroimg.png';
+import heroImg from './../assets/heroimg2.png';
 import './../../src/App.css';
 import { FaLinkedin, FaGithub, FaInstagram, FaBlogger } from "react-icons/fa";
 import { BsTwitterX } from 'react-icons/bs';
